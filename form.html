@@ -175,60 +175,127 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-12">
-                                    <form class="container-fluid">
-                                        <!-- ITEM NAME -->
-                                        <div class="mb-3 row">
-                                            <div class="col-12 col-md-3">
-                                                <label for="item_name" class="form-label">Nome</label>
-                                            </div>
-                                            <div class="col col-md-9">
-                                                <input type="text" class="form-control col-6" id="item_name" aria-describedby="itemName">
-                                            </div>
-                                        </div>
-                                        <!-- /ITEM NAME -->
+                            <form action="">
+                                <div class="row">
+                                    
+                                        <div class="col-12 col-lg-6 border">
+                                            <div class="container-fluid">
+                                                <!-- ITEM NAME -->
+                                                <div class="mb-3 row">
+                                                    <div class="col-12 col-md-3">
+                                                        <label for="item_name" class="form-label h6">Nome</label>
+                                                    </div>
+                                                    <div class="col col-md-9">
+                                                        <input type="text" class="form-control col-6" id="item_name" aria-describedby="itemName">
+                                                    </div>
+                                                </div>
+                                                <!-- /ITEM NAME -->
 
-                                        <!-- ITEM PRICE -->
-                                        <div class="mb-3 row">
-                                            <div class="col-12 col-md-3">
-                                                <label for="item_price" class="form-label">Prezzo</label>
-                                            </div>
-                                            <div class="col col-md-9">
-                                                <input type="number" class="form-control" id="item_price">
+                                                <!-- ITEM PRICE -->
+                                                <div class="mb-3 row">
+                                                    <div class="col-12 col-md-3">
+                                                        <label for="item_price" class="form-label h6">Prezzo</label>
+                                                    </div>
+                                                    <div class="col col-md-9">
+                                                        <input type="number" class="form-control" id="item_price">
+                                                    </div>
+                                                </div>
+                                                <!-- /ITEM PRICE -->
+                                                
+                                                <!-- ITEM BRAND -->
+                                                <div class="mb-3 row">
+                                                    <div class="col-12 col-md-3">
+                                                        <label for="item_brand" class="form-label h6">Marca</label>
+                                                    </div>
+                                                    <div class="col col-md-9">
+                                                        <select class="form-select" id="item_brand" aria-label="Default select example">
+                                                            <option selected>---Seleziona---</option>
+                                                            <option value="1">Samsung</option>
+                                                            <option value="2">Sony</option>
+                                                            <option value="3">Xiaomi</option>
+                                                        </select>
+                                                    </div> 
+                                                </div>
+                                                <!-- /ITEM BRAND -->
+                                                
+                                                <!-- ITEM DESCRIPTION -->
+                                                <div class="mb-3 row">
+                                                    <div class="col">
+                                                        <textarea placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" class="form-control" id="item_descr" rows="5" ></textarea>
+                                                    </div> 
+                                                </div>
+                                                <!-- /ITEM DESCRIPTION -->
+                                            
+                                                <!-- ITEM PHOTO -->
+                                                <div class="mb-3 row">
+                                                    <div class="input-group mb-3 col">
+                                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                                        <label class="input-group-text" for="inputGroupFile02">Immagine</label>
+                                                    </div>
+                                                </div>
+                                                <!-- /ITEM PHOTO -->
+
+                                                <!-- ITEM STATE -->
+                                                <div class="mb-3 row ">
+                                                    <div class="btn-group btn-group-sm col" data-bs-toggle="button">
+                                                        <button class="btn btn-outline-secondary">Disponibile</button>
+                                                        <button class="btn btn-outline-secondary" >Esaurito</button>
+                                                        <button class="btn btn-outline-secondary" >Fuori</button>
+                                                        <button class="btn btn-outline-secondary" >Produzione</button>
+                                                        <button class="btn btn-outline-secondary" ">In arrivo</button>
+                                                    </div>
+                                                </div>
+                                                <!-- /ITEM STATE -->
+                                                
                                             </div>
                                         </div>
-                                        <!-- /ITEM PRICE -->
-                                        
-                                        <!-- ITEM BRAND -->
-                                        <div class="mb-3 row">
-                                            <div class="col-12 col-md-3">
-                                                <label for="item_brand" class="form-label">Marca</label>
-                                            </div>
-                                            <div class="col col-md-9">
-                                                <select class="form-select" id="item_brand" aria-label="Default select example">
-                                                    <option selected>---Seleziona---</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                  </select>
-                                            </div> 
+
+                                        <!-- ITEM FEATURES -->
+                                        <div class="col-12 col-lg-6 border">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" name="feature" value="" id="item_feature">
+                                                    <label class="form-check-label px-3 h6" for="flexCheckDefault">
+                                                        fotocamera principale <br>
+                                                        <span class="text-secondary">foto di alta qualità e registrare video nitidi</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" name="feature" value="" id="item_feature">
+                                                    <label class="form-check-label px-3 h6" for="flexCheckDefault">
+                                                        fotocamera principale <br>
+                                                        <span class="text-secondary">foto di alta qualità e registrare video nitidi</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" name="feature" value="" id="item_feature">
+                                                    <label class="form-check-label px-3 h6" for="flexCheckDefault">
+                                                        fotocamera principale <br>
+                                                        <span class="text-secondary">foto di alta qualità e registrare video nitidi</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" name="feature" value="" id="item_feature">
+                                                    <label class="form-check-label px-3 h6" for="flexCheckDefault">
+                                                        fotocamera principale <br>
+                                                        <span class="text-secondary">foto di alta qualità e registrare video nitidi</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" name="feature" value="" id="item_feature">
+                                                    <label class="form-check-label px-3 h6" for="flexCheckDefault">
+                                                        fotocamera principale <br>
+                                                        <span class="text-secondary">foto di alta qualità e registrare video nitidi</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+
+                                            <button type="submit" class="btn btn-primary">Salva</button>
                                         </div>
-                                        <!-- /ITEM BRAND -->
-                                        
-                                        <!-- ITEM DESCRIPTION -->
-                                        <div class="mb-3 row">
-                                            <div class="col">
-                                                <textarea placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" class="form-control" id="item_descr" rows="5" >
-                                                </textarea>
-                                            </div> 
-                                        </div>
-                                        <!-- /ITEM DESCRIPTION -->
-                                       
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                      </form>
+                                        <!-- /ITEM FEATURES -->
+                                
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                     <!-- /MAIN CONTENT -->
