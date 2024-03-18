@@ -249,15 +249,16 @@
 
                                                     <!-- Item Actions -->
                                                     <td>
-                                                        <div class="col col-md-1 col-sm-1">
+                                                        <div class="col col-md-1">
                                                             <div class="d-flex gap-1">
-                                                                <span class="text-primary border border-primary py-1 px-2">
+                                                                <button class=" btn text-primary border border-primary py-1 px-2">
                                                                     <i class="fa-solid fa-pencil"></i>
-                                                                </span>
-        
-                                                                <span class="text-danger border border-danger py-1 px-2">
+                                                                </button>
+
+                                                                <button class="btn text-danger border border-danger py-1 px-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                                     <i class="fa-solid fa-trash"></i>
-                                                                </span>
+                                                                </button> 
+                                                                
                                                             </div>
                                                         </div>
                                                     </td>
@@ -265,6 +266,7 @@
                                                 </div>
                                                 </tr>
                                                 <!-- /Item row -->
+                                                
 
                                               
                                             
@@ -287,6 +289,32 @@
         </section>
 
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content d-flex align-items-center w-100">
+                    <div class="modal-header ">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Elimina prodotto</h1>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 text-center border-bottom">
+                                    <p>L'eliminazione sarà irreversibile</p>
+                                </div>
+                                <div class="col text-center w-100 border-end">
+                                    <button type="button" class="btn btn-lg text-primary" data-bs-dismiss="modal">Sì, continua</button>
+                                </div>
+                                <div class="col text-center w-100">
+                                    <button type="button" class="btn btn-lg text-primary " data-bs-dismiss="modal">Annulla</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </main>
     <!-- /MAIN -->
 
